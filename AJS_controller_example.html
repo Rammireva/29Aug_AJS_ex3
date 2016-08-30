@@ -1,0 +1,19 @@
+<!doctype html>
+<html ng-app="myapp">
+<head>
+    <title>Angular JS</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script type="application/javascript" src="jquery.min.js"></script>
+    <script type="application/javascript" src="bootstrap.min.js"></script>
+    <script type="application/javascript" src="angular.min.js"></script>
+    <script type="application/javascript">
+        var app = angular.module('myapp',[]);
+        app.controller('mycontroller', function ($scope) {
+            $scope.hello = 'Hello World!';
+        })
+    </script>
+</head>
+<body>
+<h3 ng-controller="mycontroller">{{ hello }} </h3>
+</body>
+</html>
